@@ -1,0 +1,137 @@
+{
+    // =============================================
+    // ОТКЛЮЧЕНИЕ АВТООБНОВЛЕНИЙ
+    // =============================================
+    "extensions.autoCheckUpdates": false,          // Отключить автоматическую проверку обновлений для расширений
+    "update.enableWindowsBackgroundUpdates": false, // Отключить фоновые обновления в Windows
+    "extensions.autoUpdate": false,                // Отключить автоматическое обновление расширений
+    "update.showReleaseNotes": false,              // Не показывать заметки о выпуске при обновлении
+    "update.mode": "none",                         // Полностью отключить обновления (режим "none")
+
+    // =============================================
+    // НАСТРОЙКИ ТЕРМИНАЛА
+    // =============================================
+    "terminal.integrated.cursorStyle": "line",     // Стиль курсора в терминале - линия
+    "terminal.integrated.cursorBlinking": true,    // Включить мигание курсора
+    "terminal.integrated.cursorWidth": 2,          // Ширина курсора (в пикселях)
+    "terminal.integrated.enableFileLinks": "off",  // Отключить ссылки на файлы в терминале
+    "terminal.integrated.scrollback": 50,          // Ограничить историю терминала 50 строками
+    "terminal.integrated.defaultProfile.windows": "Command Prompt", // Использовать Command Prompt по умолчанию в Windows
+
+    // =============================================
+    // НАСТРОЙКИ РЕДАКТОРА
+    // =============================================
+    "editor.minimap.enabled": false,               // Отключить мини-карту кода
+    "editor.find.seedSearchStringFromSelection": "selection", // Использовать выделенный текст как начальный для поиска
+    "editor.accessibilitySupport": "off",          // Отключить поддержку специальных возможностей
+    "editor.autoClosingDelete": "never",           // Не удалять автоматически закрывающие символы
+    "editor.autoClosingOvertype": "never",         // Не заменять автоматически закрывающие символы
+    "editor.definitionLinkOpensInPeek": true,      // Открывать определения во всплывающем окне
+    "editor.hover.delay": 100,                     // Задержка перед показом подсказки (100 мс)
+    "editor.roundedSelection": false,              // Отключить скругление выделенного текста
+    "editor.scrollbar.horizontal": "visible",      // Всегда показывать горизонтальную полосу прокрутки
+    "editor.scrollbar.vertical": "visible",        // Всегда показывать вертикальную полосу прокрутки
+    "editor.scrollbar.scrollByPage": true,         // Прокручивать по страницам, а не по строкам
+    "editor.selectionHighlight": false,            // Отключить подсветку одинакового текста при выделении
+    "editor.unicodeHighlight.ambiguousCharacters": false, // Отключить подсветку неоднозначных Unicode символов
+    "editor.unicodeHighlight.includeStrings": false, // Отключить подсветку Unicode в строках
+
+    // =============================================
+    // НАСТРОЙКИ ОТЛАДКИ
+    // =============================================
+    "debug.autoExpandLazyVariables": "on",         // Автоматически раскрывать ленивые переменные при отладке
+    "debug.inlineValues": "on",                    // Показывать значения переменных прямо в коде при отладке
+    "debug.terminal.clearBeforeReusing": true,     // Очищать терминал перед повторным использованием
+
+    // =============================================
+    // ОТКЛЮЧЕНИЕ НЕНУЖНЫХ ФУНКЦИЙ
+    // =============================================
+    "window.commandCenter": false,                 // Отключить центр команд в заголовке окна
+    "workbench.startupEditor": "none",             // Не открывать редактор при запуске
+    "explorer.autoReveal": false,                  // Не выделять файл в проводнике при открытии
+    "explorer.compactFolders": false,              // Не сжимать пустые папки в проводнике
+    "files.autoSave": "afterDelay",                // Автосохранение после задержки
+    "breadcrumbs.enabled": false,                  // Отключить навигационную цепочку (breadcrumbs)
+    "workbench.cloudChanges.autoResume": "off",    // Отключить облачную синхронизацию изменений
+    "workbench.cloudChanges.continueOn": "off",    // Отключить продолжение работы в облаке
+    "workbench.enableExperiments": false,          // Отключить экспериментальные функции
+    "workbench.quickOpen.closeOnFocusLost": false, // Не закрывать Quick Open при потере фокуса
+    "workbench.settings.enableNaturalLanguageSearch": false, // Отключить поиск на естественном языке в настройках
+    "window.density.editorTabHeight": "compact",   // Компактная высота вкладок редактора
+    "accessibility.verbosity.comments": false,     // Отключить озвучивание комментариев
+    "search.defaultViewMode": "tree",              // Режим отображения результатов поиска - дерево
+    "telemetry.telemetryLevel": "off",             // Отключить телеметрию
+    "extensions.closeExtensionDetailsOnViewChange": true, // Закрывать детали расширения при смене вида
+    "settingsSync.keybindingsPerPlatform": false,  // Не синхронизировать сочетания клавиш между платформами
+
+    // =============================================
+    // ТЕМЫ И ВНЕШНИЙ ВИД
+    // =============================================
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)", // Иконки - vscode
+    "window.zoomLevel": 1,                         // Уровень масштабирования интерфейса
+    
+    // =============================================
+    // НАСТРОЙКИ GIT
+    // =============================================
+    "git.autoRepositoryDetection": "subFolders",   // Автоопределение репозиториев Git в подпапках
+    
+    // =============================================
+    // НАСТРОЙКИ PYTHON И PYLANCE
+    // =============================================
+    "python.languageServer": "Pylance",            // Использовать Pylance как языковой сервер Python
+    "python.analysis.typeCheckingMode": "off",     // Отключить проверку типов
+    "python.analysis.diagnosticMode": "openFilesOnly", // Анализировать только открытые файлы
+    "python.analysis.autoSearchPaths": true,       // Автоматически искать пути для импортов
+    "python.analysis.autoImportCompletions": true, // Автодополнение для импортов
+    "python.analysis.completeFunctionParens": true, // Автодополнение скобок для функций
+    "python.analysis.importFormat": "absolute",    // Использовать абсолютные пути в импортах
+    "python.analysis.indexing": true,              // Включить индексацию для лучшего автодополнения
+    
+    // Настройки индексации для конкретных библиотек
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "aiogram",                    // Глубокий анализ библиотеки aiogram
+            "depth": 3,                            // Глубина анализа - 3 уровня
+            "includeAllSymbols": true              // Включить все символы
+        },
+        // Пример добавления других библиотек:
+        {
+             "name": "django",
+             "depth": 3,
+             "includeAllSymbols": true
+         }
+    ],
+    
+    // Форматирование Python кода с помощью Black
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+
+    // =============================================
+    // НАСТРОЙКИ ДЛЯ DJANGO
+    // =============================================
+    // Включение Emmet для Django HTML шаблонов
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+
+    // Ассоциации файлов
+    "files.associations": {
+        "**/*.html": "html",                      // Все .html файлы как HTML
+        "**/templates/*/*.html": "django-html",    // HTML в папках templates как Django шаблоны
+        "**/templates/*/*/*.html": "django-html",  // HTML во вложенных папках templates как Django шаблоны
+        "**/templates/*": "django-html",           // Все в папке templates как Django шаблоны
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements" // Файлы requirements как pip-requirements
+    },
+
+    // Настройки для Django HTML
+    "[django-html]": {
+        "breadcrumbs.showClasses": true,           // Показывать классы в навигационной цепочке
+        "editor.quickSuggestions": {               // Включить автодополнение в:
+            "other": true,                         // - основном коде
+            "comments": true,                      // - комментариях
+            "strings": true                        // - строках
+        }
+    },
+    "workbench.iconTheme": "vscode-icons"
+}
